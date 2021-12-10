@@ -89,7 +89,7 @@
 }
 
 .bottom-banner {
-  background-image: url("../assets/home-banner.png");
+  background-image: url("../assets/banner_orion.png");
   background-size: cover;
   background-position: center;
   min-height: 90vh;
@@ -101,6 +101,10 @@
 
 .infos > * {
   flex-basis: 100%;
+}
+
+.logos {
+  max-width: 400px;
 }
 
 /*!

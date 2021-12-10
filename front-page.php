@@ -39,7 +39,9 @@ get_header();
 	</section>
 	<div class="bottom-banner w-100 ps-50 d-flex flex-column justify-content-center">
 		<h2 class="font-huge text-white mb-4">Conheça<br><span class="fw-bold">Nossas Operações</span></h2>
-		<img class="mb-4" src="<?php echo get_bloginfo('template_url') ?>" alt="Logo das operações">
+		<div class="logos">
+			<img class="mb-4 w-100" src="<?php echo get_bloginfo('template_url') ?>/assets/banner_orion_logos.png" alt="Logo das operações">
+		</div>
 		<button type="button" class="btn btn-primary px-4 py-2 fs-4 me-auto">saiba mais</button>
 	</div>
 </main><!-- #main -->
