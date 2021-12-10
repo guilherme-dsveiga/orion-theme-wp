@@ -1,0 +1,107 @@
+:root{
+    --bs-blue: #00a7e2!important;
+    --bs-blue-hover: #0189bb;
+    --bs-navy: #00293e;
+    --bs-black: #101010!important;
+}
+
+.home-banner{
+    background-image: url('../assets/home-banner.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.ps-50{
+    padding-left: 7.5%;
+}
+
+.font-huge{
+    font-size: 3rem;
+}
+
+.font-giant{
+    font-size: 4rem;
+}
+
+.basis-45{
+    flex-basis: 45%;
+}
+
+.basis-55{
+    flex-basis: 55%
+}
+
+.workers{
+    max-width: 640px;
+    height: auto;
+}
+
+.btn-primary{
+    background-color: var(--bs-blue)!important;
+    border-color: var(--bs-blue)!important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--bs-blue-hover)!important;
+  border-color: var(--bs-blue-hover)!important;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: var(--bs-blue-hover)!important;
+  border-color: var(--bs-blue-hover)!important;
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--bs-blue-hover)!important;
+  border-color: var(--bs-blue-hover)!important;
+}
+
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
+  color: #fff;
+  background-color: var(--bs-blue-hover)!important;
+  border-color: var(--bs-blue-hover)!important;
+}
+
+.text-navy{
+    color: var(--bs-navy);
+}
+
+.text-blue{
+    color: var(--bs-blue)
+}
+
+.container{
+    max-width: 80%
+}
+
+.offices > *{
+    flex-basis: 100%
+}
+
+.bottom-banner{
+    background-image: url('../assets/home-banner.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.bg-black{
+    background-color: var(--bs-black)!important;
+}
+
+.infos > * {
+    flex-basis: 100%
+}
+
+
+//IMPORT DO BOOTSTRAP ---- SCSS ACIMA ^
+@import '../css/bootstrap/scss/bootstrap';
