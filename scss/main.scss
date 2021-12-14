@@ -111,5 +111,61 @@
     width: 24px;
     height: 24px
 }
+
+.email{
+    p{
+        margin: 0
+    }
+}
+
+.about-banner{
+    min-height: 30vh;
+    background-image: url('../assets/about-banner.jpg');
+    background-position: center;
+    background-size: cover
+}
+
+.mx-10{
+    margin-inline: 8rem;
+}
+
+.max-picture{
+    max-width: 550px;
+    height: auto;
+}
+
+.bg-light{
+    background-color: rgb(241 246 252);
+}
+
+.w-75p{
+    width: 75px;
+}
+
+.post, .page{
+    margin: 0!important
+}
+
+.text-dark-gray{
+    color: rgb(82 84 87);
+}
+
+.item-circle{
+    max-width: 150px;
+    background: linear-gradient(0deg, rgba(51,161,214,1) 0%, rgba(58,130,174,1) 100%);
+    border-radius: 9999px;
+}
+
+.gap-10{
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .mx-10{
+        margin-inline: 4rem;
+    }
+}
+
+
 //IMPORT DO BOOTSTRAP ---- SCSS ACIMA ^
 @import '../css/bootstrap/scss/bootstrap';

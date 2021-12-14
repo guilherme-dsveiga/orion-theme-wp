@@ -6,8 +6,8 @@
 			<div class="infos d-flex">
 				<div class="d-flex flex-column px-4">
 					<h3 class="fw-bold mb-4">Acesso Rápido</h3>
-					<a class="text-decoration-none text-white" href=""> > <span>Home</span></a>
-					<a class="text-decoration-none text-white" href=""> > <span>Quem Somos</span></a>
+					<a class="text-decoration-none text-blue" href=""> > <span class="text-white">Home</span></a>
+					<a class="text-decoration-none text-blue" href=""> > <span class="text-white">Quem Somos</span></a>
 				</div>
 				<div class="d-flex flex-column px-4">
 					<h3 class="fw-bold mb-4"">Contato</h3>
