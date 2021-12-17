@@ -160,6 +160,86 @@
     gap: 4rem;
 }
 
+.sec1{
+    background: url('../assets/bg1.png');
+    background-position: center;
+    background-size: cover;
+}
+.sec2{
+    background: url('../assets/bg2.png');
+    background-position: center;
+    background-size: cover;
+}
+.sec3{
+    background: url('../assets/bg3.png');
+    background-position: center;
+    background-size: cover;
+}
+.sec4{
+    background: url('../assets/bg4.png');
+    background-position: center;
+    background-size: cover;
+}
+.sec5{
+    background: url('../assets/bg5.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.p-sec{
+    padding: 5rem;
+}
+
+.cont-max{
+    max-width: 1024px;
+}
+
+.fit-content{
+    width: fit-content!important;
+}
+
+.pe-10{
+    padding-right: 10rem;
+}
+
+.ps-10{
+    padding-left: 10rem;
+}
+
+@media only screen and (max-width: 1800px){
+    .cont-max{
+        max-width: 735px;
+    }
+}
+
+@media only screen and (max-width: 1365px){
+    .sec1{
+        background: url('../assets/bg1-1024.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .sec2{
+        background: url('../assets/bg2-1024.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .sec3{
+        background: url('../assets/bg3-1024.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .sec4{
+        background: url('../assets/bg4-1024.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .sec5{
+        background: url('../assets/bg5-1024.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 @media only screen and (max-width: 1024px){
     .mx-10{
         margin-inline: 4rem;
