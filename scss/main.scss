@@ -72,11 +72,11 @@
 }
 
 .text-navy{
-    color: var(--bs-navy);
+    color: var(--bs-navy)!important;
 }
 
 .text-blue{
-    color: var(--bs-blue)
+    color: var(--bs-blue)!important;
 }
 
 .container{
@@ -107,9 +107,15 @@
 }
 
 .max-icon{
-    max-width: 24px;
-    width: 24px;
-    height: 24px
+    max-width: 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.max-icon-header{
+    max-width: 28px;
+    width: 28px;
+    height: 28px;
 }
 
 .email{
@@ -134,8 +140,20 @@
     height: auto;
 }
 
+.bg-blue{
+    background-color: var(--bs-blue)!important;
+}
+
 .bg-light{
-    background-color: rgb(241 246 252);
+    background-color: rgb(242 246 251);
+}
+
+.bg-dark-blue{
+    background-color: #0b1b33;
+}
+
+.bg-header-blue{
+    background-color:rgb(7 58 107);
 }
 
 .w-75p{
@@ -158,6 +176,15 @@
 
 .gap-10{
     gap: 4rem;
+}
+
+.logo-orion{
+    width: 75%!important;
+    max-width: 230px!important;
+}
+
+.py-10{
+    padding-block: 2rem;
 }
 
 .sec1{
@@ -204,6 +231,19 @@
 
 .ps-10{
     padding-left: 10rem;
+}
+
+.footer-item{
+    border-right: solid 1.5px rgb(16 44 72);
+}
+
+.active{
+    color: var(--bs-blue)!important;
+    border-bottom: solid 4px var(--bs-blue);
+}
+
+.border-contact{
+    border: solid 1px var(--bs-blue)!important;
 }
 
 @media only screen and (max-width: 1800px){
