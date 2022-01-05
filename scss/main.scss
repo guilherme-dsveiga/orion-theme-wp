@@ -237,6 +237,10 @@
     border-right: solid 1.5px rgb(16 44 72);
 }
 
+a{
+    color: black!important;
+}
+
 .active{
     color: var(--bs-blue)!important;
     border-bottom: solid 4px var(--bs-blue);
@@ -244,6 +248,30 @@
 
 .border-contact{
     border: solid 1px var(--bs-blue)!important;
+}
+
+.w-55{
+    width: 55%;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.w-65{
+    width: 65%;
+}
+
+.w-35{
+    width: 35%;
+}
+
+.contact-icon{
+    width: 85px;
+}
+
+.contact-bg{
+    background-color: #2287be
 }
 
 @media only screen and (max-width: 1800px){

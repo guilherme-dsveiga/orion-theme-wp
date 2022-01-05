@@ -34,12 +34,14 @@
 			<div class="header-logo">
 				<img class="w-75" src="<?php echo get_bloginfo('template_url') ?>/assets/orion-logo.png" alt="Logo do grupo Orion Maritima">
 			</div>
-			<div class="d-flex gap-5 justify-content-evenly align-items-center">
-				<a href="" class="text-uppercase text-decoration-none fs-4 active">Home</a>
-				<a href="" class="text-uppercase text-decoration-none fs-4 text-black">Quem Somos</a>
+			<div class="d-flex gap-5 justify-content-evenly align-items-center text-black">
+				<a href="/home" class="text-uppercase text-decoration-none fs-4 <?php if (get_the_title() == "Home") echo "active" ?>">Home</a>
+				<a href="/sobre" class="text-uppercase text-decoration-none fs-4  <?php if (get_the_title() == "Sobre") echo "active" ?>">Quem Somos</a>
+				<a href="/localizacao" class="text-uppercase text-decoration-none fs-4 <?php if (get_the_title() == "Localizacao") echo "active" ?>">Onde Estamos</a>
+				<a href="/servicos" class="text-uppercase text-decoration-none fs-4 <?php if (get_the_title() == "Servicos") echo "active" ?>">Serviços</a>
 				<div class="d-flex gap-3">
 					<img src="<?php echo get_bloginfo('template_url') ?>/assets/magnifier.svg" alt="Icone de Lupa">
-					<button class="fs-4 rounded text-uppercase py-2 px-4 text-white border-0 bg-blue">Contato</button>
+					<a href="/contato"><button class="fs-4 rounded text-uppercase py-2 px-4 text-white border-0 bg-blue">Contato</button></a>
 				</div>
 			</div>
 		</div>
