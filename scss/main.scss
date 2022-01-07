@@ -286,9 +286,106 @@ a{
 .map-bg{
     margin-top: -5px;
     height: 85vh;
-    background-color: rgb(85, 87, 121);
+    background-image: url('../assets/map-section-bg.png');
     background-position: center;
     background-size: cover;
+}
+
+.flex-basis > *{
+    flex-basis: 100%;
+}
+
+ul{
+    margin: 0!important;
+    padding: 0!important;
+    list-style: none;
+}
+
+.local-border{
+    border-bottom: solid 2px #2287be;
+}
+
+.square-lg{
+    width: 15px;
+    height: 15px;
+    background-color: #0152bb;
+}
+
+.square-md{
+    width: 10px;
+    height: 10px;
+    background-color: #0152bb;
+}
+
+.square-sm{
+    width: 5px;
+    height: 5px;
+    background-color: #0152bb;
+}
+
+li{
+    p{
+        margin: 0!important;
+        line-height: 120%;
+    }
+}
+
+.li-border{
+    border-bottom: solid 1px #2287be;
+}
+
+.scrollable-container{
+    position: absolute;
+    left: 0;
+    width: 35vw;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+
+    div{
+        direction: ltr;
+        margin-left: 35px;
+        width: fit-content;
+        text-align: left;
+        margin-right: auto;
+    }
+
+    scrollbar-width: 5px;
+    scrollbar-color: #ffffff #8a8a8a;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #8a8a8a;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
+}
+
+.negative-m{
+    margin-left: -125px;
+}
+
+.text-normal{
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.info-container{
+    max-width: 400px;
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+    line-height: 110%;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(34,135,190,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(34,135,190,1);
+    box-shadow: 5px 5px 0px 0px rgba(34,135,190,1);
 }
 
 @media only screen and (max-width: 1800px){
