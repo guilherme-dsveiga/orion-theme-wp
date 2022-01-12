@@ -1,4 +1,5 @@
 <?php
+
 /**
  * orion functions and definitions
  *
@@ -7,12 +8,12 @@
  * @package orion
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
-if ( ! function_exists( 'orion_setup' ) ) :
+if (!function_exists('orion_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,17 +21,18 @@ if ( ! function_exists( 'orion_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function orion_setup() {
+	function orion_setup()
+	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on orion, use a find and replace
 		 * to change 'orion' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'orion', get_template_directory() . '/languages' );
+		load_theme_textdomain('orion', get_template_directory() . '/languages');
 
 		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+		add_theme_support('automatic-feed-links');
 
 		/*
 		 * Let WordPress manage the document title.
@@ -38,19 +40,19 @@ if ( ! function_exists( 'orion_setup' ) ) :
 		 * hard-coded <title> tag in the document head, and expect WordPress to
 		 * provide it for us.
 		 */
-		add_theme_support( 'title-tag' );
+		add_theme_support('title-tag');
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support('post-thumbnails');
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'orion' ),
+				'menu-1' => esc_html__('Primary', 'orion'),
 			)
 		);
 
@@ -84,7 +86,7 @@ if ( ! function_exists( 'orion_setup' ) ) :
 		);
 
 		// Add theme support for selective refresh for widgets.
-		add_theme_support( 'customize-selective-refresh-widgets' );
+		add_theme_support('customize-selective-refresh-widgets');
 
 		/**
 		 * Add support for core custom logo.
@@ -102,7 +104,7 @@ if ( ! function_exists( 'orion_setup' ) ) :
 		);
 	}
 endif;
-add_action( 'after_setup_theme', 'orion_setup' );
+add_action('after_setup_theme', 'orion_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -111,22 +113,24 @@ add_action( 'after_setup_theme', 'orion_setup' );
  *
  * @global int $content_width
  */
-function orion_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'orion_content_width', 640 );
+function orion_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('orion_content_width', 640);
 }
-add_action( 'after_setup_theme', 'orion_content_width', 0 );
+add_action('after_setup_theme', 'orion_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function orion_widgets_init() {
+function orion_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'orion' ),
+			'name'          => esc_html__('Sidebar', 'orion'),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'orion' ),
+			'description'   => esc_html__('Add widgets here.', 'orion'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -134,23 +138,35 @@ function orion_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'orion_widgets_init' );
+add_action('widgets_init', 'orion_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function orion_scripts() {
-	wp_enqueue_style( 'orion-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'woo-main', get_template_directory_uri() . "/css/main.css");
-	wp_style_add_data( 'orion-style', 'rtl', 'replace' );
+function orion_scripts()
+{
+	wp_enqueue_style('orion-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_enqueue_style('woo-main', get_template_directory_uri() . "/css/main.css");
+	wp_style_add_data('orion-style', 'rtl', 'replace');
 
-	wp_enqueue_script( 'orion-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('orion-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'orion_scripts' );
+add_action('wp_enqueue_scripts', 'orion_scripts');
+
+
+function add_my_script()
+{
+	wp_enqueue_script(
+		'your-script', // name your script so that you can attach other scripts and de-register, etc.
+		get_template_directory_uri() . '/js/map.js', // this is the location of your script file
+		array('jquery') // this array lists the scripts upon which your script depends
+	);
+}
+add_action('wp_enqueue_scripts', 'add_my_script');
 
 /**
  * Implement the Custom Header feature.
@@ -175,7 +191,6 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

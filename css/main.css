@@ -187,41 +187,42 @@
 }
 
 .sec1 {
-  background: url("../assets/bg1.png");
+  background: url("../assets/bg1-1024.png");
   background-position: center;
   background-size: cover;
 }
 
 .sec2 {
-  background: url("../assets/bg2.png");
+  background: url("../assets/bg2-1024.png");
   background-position: center;
   background-size: cover;
 }
 
 .sec3 {
-  background: url("../assets/bg3.png");
+  background: url("../assets/bg3-1024.png");
   background-position: center;
   background-size: cover;
 }
 
 .sec4 {
-  background: url("../assets/bg4.png");
+  background: url("../assets/bg4-1024.png");
   background-position: center;
   background-size: cover;
 }
 
 .sec5 {
-  background: url("../assets/bg5.png");
+  background: url("../assets/bg5-1024.png");
   background-position: center;
   background-size: cover;
 }
 
 .p-sec {
-  padding: 5rem;
+  min-height: 65vh;
+  padding: 2rem 5rem;
 }
 
 .cont-max {
-  max-width: 1024px;
+  width: 60%;
 }
 
 .fit-content {
@@ -292,6 +293,10 @@ a {
   background-image: url("../assets/map-section-bg.png");
   background-position: center;
   background-size: cover;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .flex-basis > * {
@@ -387,9 +392,20 @@ li p {
   box-shadow: 5px 5px 0px 0px #2287be;
 }
 
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.ball {
+  width: 150px;
+}
+
 @media only screen and (max-width: 1800px) {
   .cont-max {
-    max-width: 735px;
+    max-width: 60%;
   }
 }
 @media only screen and (max-width: 1365px) {
@@ -426,6 +442,10 @@ li p {
 @media only screen and (max-width: 1024px) {
   .mx-10 {
     margin-inline: 4rem;
+  }
+
+  .hidden-ss {
+    display: none !important;
   }
 }
 /*!

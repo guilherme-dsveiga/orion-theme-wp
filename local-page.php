@@ -12,31 +12,31 @@ get_header();
     <div class="map-border mx-5"></div>
     <div class="map-bg d-flex align-items-center justify-content-center">
         <div class="scrollable-container ms-5 text-white">
-            <div class="fs-3 mb-2 px-2 fw-bold text-uppercase bg-blue">Belém - Pa</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">Fortaleza - ce</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">imbituba - sc</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">itaguaí - rj</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">itajaí - sc</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">juriti - pa</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">macapá - ap</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">paranaguá - pr</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">porto alegre - rs</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">porto de açu - rj</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">rio de janeiro - rj</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">rio grande - rs<span class="text-normal"> (Head Office)</span></div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">salvador - ba</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">santarém - pa</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">são luiz - ma</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">são francisco do sul - sc</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">santos - sp</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">vitória - es</div>
-            <div class="fs-3 mb-2 fw-bold text-uppercase">vila do conde - pa</div>
+            <div class="fs-3 mb-2 px-2 fw-bold text-uppercase pointer bg-blue" id="belem">belém - Pa</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="fortaleza">fortaleza - ce</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="imbituba">imbituba - sc</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="itaguaí">itaguaí - rj</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="itajaí">itajaí - sc</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="juriti">juriti - pa</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="macapá">macapá - ap</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="paranaguá">paranaguá - pr</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="alegre">porto alegre - rs</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="açu">porto de açu - rj</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="janeiro">rio de janeiro - rj</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="grande">rio grande - rs<span class="text-normal"> (Head Office)</span></div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="salvador">salvador - ba</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="santarém">santarém - pa</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="luiz">são luiz - ma</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="francisco">são francisco do sul - sc</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="santos">santos - sp</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="vitória">vitória - es</div>
+            <div class="fs-3 mb-2 fw-bold text-uppercase pointer" id="conde">vila do conde - pa</div>
         </div>
         <img class="negative-m h-100 p-5" src="<?php echo get_bloginfo('template_url') ?>/assets/map.png" alt="Imagem do mapa com as localizações da Orion Maritima">
         <div class="d-flex flex-column justify-content-center text-black bg-white info-container mb-5 me-5 py-4 px-5">
-            <div class="fw-bold mb-2"> BELÉM - PA</div>
+            <div class="fw-bold mb-2" id="box-title"> BELÉM - PA</div>
             <div class="fw-bold">Orion Rodos Maritima e Portuária Ltda</div>
-            <div class="">Av. Governador José Malcer, 815, Salas 309 – Edif. Palladium
+            <div id="box-text">Av. Governador José Malcer, 815, Salas 309 – Edif. Palladium
                 CEP: 66055-260 - Nazaré – PA – Brazil
                 PHONE: +55(91) 3754-3191
                 E-mail: operations.blm@orionrodos.com
@@ -297,16 +297,6 @@ get_header();
                     <p>PHONE: +55(91) 3754-3191
                     </p>
                     <p>E-mail: operations.blm@orionrodos.com</p>
-                </li>
-                <li class="d-flex flex-column li-border my-2 py-2">
-                    <div class="d-flex align-items-center">
-                        <div class="square-sm me-1"></div>
-                        <h6><span class="fw-bold text-uppercase"></h6>
-                    </div>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
                 </li>
                 <li class="d-flex flex-column li-border my-2 py-2">
                     <div class="d-flex align-items-center">
